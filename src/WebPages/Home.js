@@ -5,19 +5,19 @@ const Home = () => {
     return ( 
         <div className="HomeContent">
             <Helmet>
-                <title>Meii</title>
-                <meta property="og:title" content="Meii" />
-                <meta name="description" content="The best free Discord confession bot." />
-                <meta property="og:description" content="The best free Discord confession bot." />
-                <meta property="og:url" content="meiibot.xyz" />
+                <title>Axis</title>
+                <meta property="og:title" content="Axis" />
+                <meta name="description" content="The nextgeneration of Discord bots." />
+                <meta property="og:description" content="The nextgeneration of Discord bots." />
+                <meta property="og:url" content="https://axisbot.vercel.app" />
             </Helmet>
             <div className="LayoutContainer">
                 <div className="InfoBubble">
                     <div className="InfoColLeft">
                         <div className="InfoContent">
-                                <div className="AltBoldText">MEII</div>
-                                <div className="MainText">Confessions Reimagined.</div>
-                                <div className="AltText">Meii is a free and easy-to-use bot, where you can log and send anonymous confessions.</div>
+                                <div className="AltBoldText">AXIS</div>
+                                <div className="MainText">Management Reimagined.</div>
+                                <div className="AltText">Axis is a free and easy-to-use bot, packaged full of features capable of healing your server.</div>
                                 <div className="infoButtonContainer">
                                     <Link to="/invite" className='GenericLinkDeco'>
                                         <div className="infoButton" id="InfoMainButton">
@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                     <div className="InfoColRight">
                         <div className="InfoImg">
-                            <img rel="prefetch" src="./img/Logos/MeiiRoundedPurpleBorder.png" alt="MeiiLogo" width="150px" height="150px"/>
+                            <img rel="prefetch" src="./img/Logos/MeiiRoundedPurpleBorder.png" alt="AxisLogo" width="150px" height="150px"/>
                         </div>
                     </div>
                 </div>
@@ -46,8 +46,8 @@ const Home = () => {
                     <div className="FeatureBubble" id='first'>
                         <div className="FeatureColLeft">
                             <div className='FTextContainer'>
-                                <div className='FTitle' id='LongBoi'>Anonymous Confessions</div>
-                                <div className='FSubTitle'>Send free and simple anonymous confessions to your server</div>
+                                <div className='FTitle' id='LongBoi'>Handcrafted Moderation</div>
+                                <div className='FSubTitle'>Keep your discord server at the tip of your fingers, incredible moderation systems </div>
                             </div>
                         </div>
                         <div className="FeatureColRight">
@@ -64,16 +64,16 @@ const Home = () => {
                         </div>
                         <div className="FeatureColRight">
                             <div className='FTextContainer' id='CL'>
-                                <div className='FTitle'>Free Logging</div>
-                                <div className='FSubTitle'>Log those confessions completely free without pay or vote walls</div>
+                                <div className='FTitle'>Utility Tools</div>
+                                <div className='FSubTitle'>Axis utilizes many different packages and use that to power incredible commands</div>
                             </div>
                         </div>
                     </div>
                     <div className="FeatureBubble" id='third'>
                         <div className="FeatureColLeft">
                             <div className='FTextContainer' id='GE'>
-                                <div className='FTitle'>GIF Emotes</div>
-                                <div className='FSubTitle'>Send GIF emotes to your friends <i>or maybe that special someone~</i></div>
+                                <div className='FTitle'>Entertainment</div>
+                                <div className='FSubTitle'>Not sure that your memes you are spamming memes actually help? Probably not but we can help!</i></div>
                             </div>
                         </div>
                         <div className="FeatureColRight">
