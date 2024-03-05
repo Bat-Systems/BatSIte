@@ -16,7 +16,7 @@ const Home = () => {
                     <div className="InfoColLeft">
                         <div className="InfoContent">
                                 <div className="AltBoldText">AXIS</div>
-                                <div className="MainText">Moderation Reimagined</div>
+                                <div className="MainText">Management Reimagined</div>
                                 <div className="AltText">Axis is a free and easy-to-use bot, packaged full of features capable of healing your server.</div>
                                 <div className="infoButtonContainer">
                                     <Link to="/invite" className='GenericLinkDeco'>
