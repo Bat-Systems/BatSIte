@@ -1,0 +1,273 @@
+/* Animations */
+@keyframes CommandsPop {
+    0% {transform: scale(0.95);}
+    100% {transform: scale(1); opacity:100%;}
+}
+
+@keyframes CommandAltPop {
+    0% {transform: scale(0.98); opacity:50%;}
+    100% {transform: scale(1); opacity:100%;}
+}
+
+/* Commands Page */
+.CommandsContent{
+    font-family: 'Inter', sans-serif;
+}
+
+.CommandAltAnimationHandler{
+    animation: CommandAltPop 0.2s forwards;
+    opacity: 0%;
+}
+
+.CommandsLayoutContainer{  
+    margin: auto;
+    padding-top: 40px;
+    width: 900px;
+    padding-bottom: 200px;
+}
+
+.CommandsSectionTitle{
+    text-align: center;
+    color: #E4E4E5;
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.901);
+}
+
+/* Command Filters */
+.CommandsFilterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;;
+    margin-left: 200px;
+    z-index: -1;
+}
+
+
+.FilterButton{
+    flex: 0 0 20%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 30px;
+    margin-right: 34px;
+    font-weight: 600;
+    color: #D6BCFA;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #D6BCFA;
+    transition: 120ms ease;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.FilterButton:hover{
+    background-color: #d6bcfa27;
+
+}
+
+.FilterButton#selected{
+    background-color: #D6BCFA;
+    color: #252632;
+}
+
+/* Command List */
+.CommandListContainer{
+    padding-top: 20px;
+    height: fit-content;
+    margin-left: 129px;
+    overflow: hidden; 
+}
+
+
+.CommandBubble{
+    background-color: #252632;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 120ms ease;
+    width: 650px;
+    height: 70px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: pointer;
+    overflow-y: hidden;
+}
+
+.CommandBubbleAnimationHandler{
+    animation: CommandsPop 0.2s forwards;
+    opacity: 0%;
+}
+
+
+.CommandBubbleExpanded{
+    background-color: #252632;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 120ms ease;
+    width: 650px;
+    height: 135px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: pointer;
+}
+
+.CommandBubbleExpanded#inactive{
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    margin-top: 0; /* Reset top margin */
+    margin-bottom: 0; /* Reset bottom margin */
+    padding-top: 0; /* Reset top padding */
+    padding-bottom: 0; /* Reset bottom padding */
+}
+
+.CommandBubble#inactive{
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    margin-top: 0; /* Reset top margin */
+    margin-bottom: 0; /* Reset bottom margin */
+    padding-top: 0; /* Reset top padding */
+    padding-bottom: 0; /* Reset bottom padding */
+}
+
+.CommandBubbleTitleContainer{
+    display: flex;
+    gap: 576px;
+}
+
+.CommandBubbleExpandArrow{
+    margin-top: 10px;
+    transform: scale(1.2);
+    color: #b59ed5;
+}
+
+.CommandBubbleTitle{
+    color: #E4E4E5;
+    text-align: left;
+    padding-top: 9px;
+    font-weight: 600;
+    width: 20px;
+    white-space: nowrap;
+    font-size: 18px; 
+    margin-left: 6px;
+}
+
+.CommandBubbleInsideContainer{
+    margin-left: 10px;
+    padding-top: 3.8px;
+}
+
+.CBubbleContentContainer{
+    padding-left: 20px;
+}
+
+.CommandBubbleDesc{
+    padding-top: 1px;
+    padding-bottom: 0px;
+    color: #9497B3;
+    width: 600px;
+    font-size: 16.5px;
+    font-weight: 450;
+    margin-left: 6px;
+}
+
+/* Command Bubble Expanded */
+.CommandBubbleExpandedContainer{
+    display: flex;
+    gap: 60px;
+    padding-left: 5px;
+}
+
+.CommandBubbleField{
+    color: #E4E4E5;
+    margin-top: 13px;
+}
+
+.CommandBubbleFieldSubTitleContainer{
+    width: 350px;
+}
+
+.CommandBubbleFieldTitle{
+    font-weight: 600;
+    padding-bottom: 3px;
+    font-size: 18;
+}
+
+.CommandBubbleFieldSubTitle{
+    background-color: #1D1C1A;
+    width: fit-content;
+    font-size: 16px;
+    padding: 2px;
+    color: #b59ed5;
+}
+
+.CommandBubbleExpandedContainer#inactive{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 435px) {
+    .CommandsLayoutContainer{  
+        margin: auto;
+        padding-top: 40px;
+        width: 95vw;
+        padding-bottom: 200px;
+    }
+    /* Command Title */
+    .CommandsSectionTitle{
+        font-size: 23px;
+        padding-bottom: 0px;
+    }
+    /* Command Filters */
+    .CommandsFilterContainer{
+        margin-left: 50px; 
+    }
+    .FilterButton{
+        flex: 0 0 30%;
+        padding-left: 8px;
+        padding-right: 8px;
+        transform: scale(0.95);
+    }
+    /* Command List */
+    .CommandListContainer{
+        margin-left: 2.5vw;
+    }
+    .CommandBubble{
+        width: 90vw;
+    }
+    .CommandBubbleExpanded{
+        width: 90vw;
+    }
+    .CommandBubbleTitle{
+        font-size: 15px; 
+    }
+    .CommandBubbleDesc{
+        width: 310px;
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+    .CommandBubbleFieldTitle{
+        font-size: 15px;
+    }
+    .CommandBubbleFieldSubTitle{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .CommandBubbleTitleContainer{
+        gap: 72vw;
+    }    
+    /* Spacer */
+    .CommandsLayoutContainer{  
+        padding-bottom: 150px;
+    }
+}

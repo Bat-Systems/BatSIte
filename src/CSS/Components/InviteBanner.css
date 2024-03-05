@@ -1,0 +1,79 @@
+.Invitebanner{
+    height: 230px;
+    background-color: #b69ae4af;
+    font-family: 'Inter', sans-serif;
+}
+
+.bcontentContainer{
+    padding-top: 60px;
+}
+
+.bText{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.BButtonContentContainer{
+    margin-left: -13px;
+    display: flex;
+    column-gap: 2px;
+}
+
+.bbuttonicon{
+    color: #5865F2;
+}
+
+.BButtonIconContainer{
+    margin-top: -3.5px;
+    margin-left: 20px;
+}
+
+.BannerButtonContainer{
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+.bannerInviteButton{
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.15s;
+    text-align: center;
+    transform: scale(1.2);
+    background-color: #ffffff;
+    color: #252632;
+}
+
+.BButtonText{
+    font-size: 15px;
+    margin-left: -8px;
+    width: 150px;
+}
+
+.bannerInviteButton:hover{
+    background-color: #e8dcfb;
+}
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 435px) {
+    .bText{
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+    .BannerButtonContainer{
+        transform: scale(0.73);
+    }
+    .Invitebanner{
+        height: 165px;
+    }
+    .bcontentContainer{
+        padding-top: 42px;
+    }
+}

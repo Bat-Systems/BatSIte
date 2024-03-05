@@ -1,0 +1,136 @@
+.footer{
+    height: 310px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footerContentContainer{
+    margin: auto;
+    width: fit-content;
+    padding-top: 50px;
+    display: flex;
+    column-gap: 500px;
+}
+
+.leftContentContainer{
+    padding-left: -120px;
+}
+
+.logoImg{
+    padding-bottom: 25px;
+    width: fit-content;
+}
+
+.logoText{
+    color: #d8dbf185;
+    width: 78%;
+    padding-bottom: 80px;
+}
+
+.copyrightContent{
+    color: #d8dbf13a;
+    width: fit-content;
+}
+
+.footerColLeft{
+    float: left;
+    width: 32%;
+}
+  
+.footerColRight{
+    float: right;
+    width: 30%;
+}
+
+.LCContainer{
+    margin-top: -3px;
+    display: flex;
+    float: right;
+}
+
+.linkColumn#Space{
+    padding-right: 90px;
+}
+
+.LCTitle{
+    color: white;
+    font-size: 17px;
+}
+
+.LCLinkContainer{
+    display:grid;
+}
+
+.LCLinkDiv{
+    padding-top: 20px;
+}
+
+.GenericLinkDeco#LC{
+    color: #e2e3f1a4;
+    font-size: 15px;
+}
+
+.GenericLinkDeco#LC:hover{
+    color: #C3B1E1;
+}
+
+/* Platform Optimizations */
+
+/* Media Query For Laptops */
+@media only screen and (max-width: 1160px){
+    .footerContentContainer{
+        column-gap: 200px;
+    }
+}    
+
+@media only screen and (max-width: 950px){
+    .footerContentContainer{
+        column-gap: 100px;
+    }
+}    
+
+@media only screen and (max-width: 850px){
+    .footerContentContainer{
+        column-gap: 50px;
+    }
+} 
+
+@media only screen and (max-width: 780px){
+    .footerContentContainer{
+        column-gap: 0px;
+    }
+}
+
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 435px) {
+    .linkColumn#Space{
+        padding-right: 25px;
+    }
+    .logoImg{
+         transform: scale(0.8);
+         padding-bottom: 5px;
+         margin-left: -5px;
+         margin-top: -5px;
+    }
+    .logoText{
+        font-size: 12px;
+        width: 180px;
+    }
+    .copyrightContent{
+        font-size: 13px;
+        width: 150px;
+        text-wrap: nowrap;
+    }
+    .LCTitle{
+        font-size: 11px;
+    }
+    .GenericLinkDeco#LC{
+        font-size: 10px;
+    }
+    .footer{
+        height: 250px;
+    }
+    .LCLinkDiv{
+        padding-top: 10px;
+    }
+}
